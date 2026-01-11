@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franal Economic Network</title>
+
+    <!-- Favicon (use local logo) -->
+    <link rel="icon" href="FEN.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+    <!-- 1. Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="FEN.png" alt="FEN logo" class="brand-logo" width="160" height="auto">
+                <span class="brand-text"></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span><span></span><span></span><span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                            <div class="row g-0">
+                                <div class="col-lg-6 border-end">
+                                    <h6 class="mega-menu-header">Operational Excellence</h6>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-project-diagram"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Project Management</span>
+                                            <small class="text-muted">Lifecycle management & advisory</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Monitoring & Evaluation</span>
+                                            <small class="text-muted">Impact assessment & analysis</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chalkboard-user"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Capacity Building</span>
+                                            <small class="text-muted">Training & organizational dev</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-laptop-code"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Information Systems</span>
+                                            <small class="text-muted">Digital transformation & MIS</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 ps-lg-3">
+                                    <h6 class="mega-menu-header">Strategic Advisory</h6>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chess-knight"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Strategic Planning</span>
+                                            <small class="text-muted">Long-term growth strategies</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-coins"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Financial Advisory</span>
+                                            <small class="text-muted">Planning, auditing & investment</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-magnifying-glass-chart"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Market Research</span>
+                                            <small class="text-muted">Consumer insights & analysis</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-scale-balanced"></i>
+                                        <div>
+                                            <span class="d-block fw-bold">Policy Analysis</span>
+                                            <small class="text-muted">Review & compliance advisory</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 text-center">
+                                    <a href="#services" class="btn btn-sm btn-premium-outline text-dark" style="border-color: var(--dark-color);">View All Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#gallery" id="workDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="workDropdown">
+                            <li><a class="dropdown-item" href="#gallery">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#stats">Impact Stats</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                            <li><a class="dropdown-item" href="#about">About Us</a></li>
+                            <li><a class="dropdown-item" href="#resources">Why Choose Us</a></li>
+                            <li><a class="dropdown-item" href="#blog">Insights & News</a></li>
+                            <li><a class="dropdown-item" href="#contact">Careers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-premium d-none d-lg-inline-block ms-lg-3" data-bs-toggle="modal" data-bs-target="#whatsappModal"
+                    style="background: var(--accent-color); color: var(--dark-color); border-color: var(--accent-color);">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="hero">
+        <video autoplay muted loop id="hero-video"
+            poster="Hero.jpg">
+            
+            Your browser does not support the video tag.
+        </video>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="display-3">Franal Economic Network</h1>
+            <p class="lead">Empowering Progress Through Precision.</p>
+            <div>
+                <a href="#services" class="btn btn-premium btn-lg">Our Services</a>
+                <a href="#contact" class="btn btn-premium-outline btn-lg ms-3">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="mb-4">About Franal Economic Network</h2>
+                    <p class="lead">A premier consultancy firm based in Kenya, dedicated to delivering innovative, data-driven, and sustainable solutions.</p>
+                    <p>We specialize in integrating cutting-edge information systems, robust project management methodologies, and comprehensive monitoring and evaluation frameworks to enhance organizational efficiency, accountability, and impact. Founded by an experienced professional with strong academic credentials and extensive practical expertise, we bring a results-oriented and client-focused approach to every engagement.</p>
+                    <a href="#contact" class="btn btn-premium mt-3">Get in Touch</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="about-card">
+                                <div class="icon"><i class="fas fa-hands-helping"></i></div>
+                                <h3>Our Mission</h3>
+                                <p>To empower organizations and communities by delivering strategic consultancy, capacity-building initiatives, and evidence-based solutions.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-card">
+                                <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                                <h3>Our Vision</h3>
+                                <p>To be Kenya’s leading consultancy firm, recognized for transforming organizations through innovative management solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>OUR EXPERTISE</p>
+                <h2>Our Services & Activities</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Project Management</h4>
+                            <p>End-to-end project lifecycle management, risk assessment, and technical advisory support.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Project Management">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Monitoring & Evaluation</h4>
+                            <p>Design of M&E frameworks, impact assessments, data analysis, and performance evaluations.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Monitoring & Evaluation">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Capacity Building</h4>
+                            <p>Organizational development, staff training, leadership development, and digital skills.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Capacity Building">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Information Systems</h4>
+                            <p>Design of MIS, IT systems analysis, data management, and digital transformation advisory.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Information Systems">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Strategic Planning</h4>
+                            <p>Developing long-term strategies, business plans, and feasibility studies for sustainable growth.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Strategic Planning">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Financial Advisory</h4>
+                            <p>Expert financial planning, auditing, and investment analysis for sustainable economic growth.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Financial Advisory">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Market Research</h4>
+                            <p>Comprehensive market analysis, consumer behavior studies, and competitive intelligence.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Market Research">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-card" data-tilt>
+                        <div class="service-img-container">
+                            <div class="service-img"
+                                style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop');">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Policy Analysis</h4>
+                            <p>In-depth policy review, formulation support, and regulatory compliance advisory.</p>
+                            <a href="#" class="btn-service-book" data-bs-toggle="modal" data-bs-target="#whatsappModal" data-service="Policy Analysis">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Statistics / Counter Section -->
+    <section id="stats" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="counter-box">
+                        <div class="icon"><i class="fas fa-scale-balanced"></i></div>
+                        <span class="counter-text">Integrity</span>
+                        <p>Upholding honesty and transparency</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="counter-box">
+                        <div class="icon"><i class="fas fa-star"></i></div>
+                        <span class="counter-text">Excellence</span>
+                        <p>Delivering high-quality services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="counter-box">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <span class="counter-text">Innovation</span>
+                        <p>Applying modern technologies</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="counter-box">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <span class="counter-text">Collaboration</span>
+                        <p>Building strong partnerships</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Gallery / Media Section -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>OUR PORTFOLIO</p>
+                <h2>Our Work in Action</h2>
+            </div>
+            <div class="row g-4" data-masonry='{"percentPosition": true }'>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+                        class="glightbox gallery-item">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+                            alt="Gallery Image 1" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus icon"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2070&auto=format&fit=crop"
+                        class="glightbox gallery-item">
+                        <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2070&auto=format&fit=crop"
+                            alt="Gallery Image 2" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus icon"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                        class="glightbox gallery-item">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                            alt="Gallery Image 3" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus icon"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop"
+                        class="glightbox gallery-item">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop"
+                            alt="Gallery Image 4" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus icon"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop"
+                        class="glightbox gallery-item">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop"
+                            alt="Gallery Image 5" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus icon"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#" class="glightbox gallery-item" data-type="video">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop"
+                            alt="Gallery Video" class="img-fluid">
+                        <div class="gallery-overlay"><i class="fas fa-play icon"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Resources Section -->
+    <section id="resources" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>WHY CHOOSE US</p>
+                <h2>The Franal Advantage</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="resourcesAccordion">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-check-circle me-3 text-primary"></i> Multi-disciplinary Expertise
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#resourcesAccordion">
+                                <div class="accordion-body">
+                                    We possess deep expertise in management, technology, and project evaluation, allowing us to tackle complex challenges with a holistic approach.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-chart-line me-3 text-primary"></i> Evidence-based Approach
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#resourcesAccordion">
+                                <div class="accordion-body">
+                                    Our consultancy is driven by research and data, ensuring that our solutions are grounded in reality and tailored to deliver measurable results.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-puzzle-piece me-3 text-primary"></i> Tailor-made Solutions
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#resourcesAccordion">
+                                <div class="accordion-body">
+                                    We understand that every client is unique. We align our strategies specifically to your needs and organizational objectives.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="fas fa-users me-3 text-primary"></i> Target Clients
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#resourcesAccordion">
+                                <div class="accordion-body">
+                                    We serve Government Agencies, NGOs, Private Sector Organizations, Educational Institutions, International Development Agencies, and CBOs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-divider shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 9. Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>TESTIMONIALS</p>
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="swiper testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-100">
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200" alt="User">
+                            <p class="quote">"Franal's strategic insights transformed our operational efficiency. Their data-driven approach helped us identify key growth areas we hadn't considered."</p>
+                            <h5 class="name">Sarah Johnson</h5>
+                            <span class="position">CEO, Tech Innovations</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-100">
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&q=80&w=200&h=200" alt="User">
+                            <p class="quote">"The project management training provided by Franal was exceptional. Our team is now better equipped to handle complex projects with confidence."</p>
+                            <h5 class="name">David Kamau</h5>
+                            <span class="position">Director, NGO</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-100">
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&q=80&w=200&h=200" alt="User">
+                            <p class="quote">"Their M&E framework design was thorough and practical. It has significantly improved our reporting and accountability to stakeholders."</p>
+                            <h5 class="name">Dr. Emily Carter</h5>
+                            <span class="position">Program Manager</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-100">
+                        <div class="testimonial-card">
+                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=200&h=200" alt="User">
+                            <p class="quote">"Professional, reliable, and innovative. Franal Economic Network is a partner you can trust for sustainable business solutions."</p>
+                            <h5 class="name">John Miller</h5>
+                            <span class="position">Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Call-to-Action Section -->
+    <section id="cta" class="section-padding">
+        <div class="container" data-aos="zoom-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h2>Partner with Us for Success</h2>
+                    <p>We bring a results-oriented and client-focused approach to every engagement. Let us help you achieve your organizational goals.</p>
+                    <a href="#" class="btn btn-premium-outline btn-lg" data-bs-toggle="modal" data-bs-target="#whatsappModal"
+                        style="border-color: var(--accent-color); color: var(--accent-color);">Book Consultation</a>
+                    <a href="#contact" class="btn btn-secondary-premium btn-lg ms-3">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Blog / News & Updates Section -->
+    <section id="blog" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>INSIGHTS</p>
+                <h2>Latest News & Updates</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-img-container">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                                class="card-img-top" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta"><span><i class="far fa-calendar-alt"></i> Aug 15, 2025</span> |
+                                <span><i class="far fa-user"></i> By Jane Doe</span>
+                            </p>
+                            <a href="#" class="blog-title">The Role of Data Analytics in Strategic Decision Making</a>
+                            <p class="mt-2">How leveraging big data can provide actionable insights for business growth...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-img-container">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=2074&auto=format&fit=crop"
+                                class="card-img-top" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta"><span><i class="far fa-calendar-alt"></i> Aug 10, 2025</span> |
+                                <span><i class="far fa-user"></i> By John Smith</span>
+                            </p>
+                            <a href="#" class="blog-title">Effective Project Management for Non-Profits</a>
+                            <p class="mt-2">Key strategies to ensure your projects deliver impact on time and within budget...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-card">
+                        <div class="blog-img-container">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2072&auto=format&fit=crop"
+                                class="card-img-top" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-meta"><span><i class="far fa-calendar-alt"></i> Aug 05, 2025</span> |
+                                <span><i class="far fa-user"></i> By Sarah Lee</span>
+                            </p>
+                            <a href="#" class="blog-title">Digital Transformation in the Public Sector</a>
+                            <p class="mt-2">Exploring the challenges and opportunities of digitizing government services...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Reach out for consultancy, partnerships, or any inquiries.</p>
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div><span>
+                                Kisumu City, 40100</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-phone"></i></div><span>+254 721752685</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div><span>info@franal.co.ke</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form">
+                        <div class="form-header">
+                            <img src="FEN.png" alt="FEN Logo" class="form-logo">
+                            <h4>Chat on WhatsApp</h4>
+                            <p class="text-muted small">Fill out the form below to start a conversation with us directly.</p>
+                        </div>
+                        <form id="whatsappForm" class="row g-3" onsubmit="sendToWhatsapp(event)">
+                            <div class="col-md-6">
+                                <input type="text" id="waName" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" id="waEmail" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <select id="waService" class="form-control form-select" required>
+                                    <option value="" selected disabled>Select Service Interest</option>
+                                    <option value="Project Management">Project Management</option>
+                                    <option value="Monitoring & Evaluation">Monitoring & Evaluation</option>
+                                    <option value="Capacity Building">Capacity Building</option>
+                                    <option value="Information Systems">Information Systems</option>
+                                    <option value="Strategic Planning">Strategic Planning</option>
+                                    <option value="Financial Advisory">Financial Advisory</option>
+                                    <option value="Market Research">Market Research</option>
+                                    <option value="Policy Analysis">Policy Analysis</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea id="waMessage" class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-premium w-100">
+                                    <i class="fab fa-whatsapp me-2"></i> Send via WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.22967666248!2d34.70526628682576!3d-0.0844781745749202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa48776291b1d%3A0x23498ad53a948312!2sKisumu!5e0!3m2!1sen!2ske!4v1708500000000!5m2!1sen!2ske"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fas fa-briefcase"></i> Franal Economic Network</h5>
+                    <p>Empowering organizations and communities by delivering strategic consultancy, capacity-building initiatives, and evidence-based solutions.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Get Involved</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#whatsappModal">Book consultation</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Subscribe to our Newsletter</h5>
+                    <p>Get the latest updates on our services and industry insights.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-premium" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>©Powered by Obondi Technologies|Obondi Group. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- Elfsight WhatsApp Chat removed to avoid duplicate chat widgets -->
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" async></script>
+
+    <!-- Plugin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-float" data-bs-toggle="modal" data-bs-target="#whatsappModal" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- WhatsApp Modal -->
+    <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0 pb-4 px-4">
+                    <div class="contact-form" style="padding: 0; box-shadow: none; border: none; transform: none;">
+                        <div class="form-header mb-3">
+                            <img src="FEN.png" alt="FEN Logo" class="form-logo" style="width: 60px; margin-bottom: 0.5rem;">
+                            <h4>Book a Service | Ask a Question</h4>
+                            <p class="text-muted small mb-0">Start a conversation with us directly.</p>
+                        </div>
+                        <form id="whatsappModalForm" class="row g-3" onsubmit="sendToWhatsappModal(event)">
+                            <div class="col-12">
+                                <input type="text" id="waNameModal" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" id="waEmailModal" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <select id="waServiceModal" class="form-control form-select" required>
+                                    <option value="" selected disabled>Select Service Interest</option>
+                                    <option value="Project Management">Project Management</option>
+                                    <option value="Monitoring & Evaluation">Monitoring & Evaluation</option>
+                                    <option value="Capacity Building">Capacity Building</option>
+                                    <option value="Information Systems">Information Systems</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="waDateModal" class="form-label small text-muted mb-1">Preferred Date & Time</label>
+                                <input type="datetime-local" id="waDateModal" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <textarea id="waMessageModal" class="form-control" rows="3" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-premium w-100">
+                                    <i class="fab fa-whatsapp me-2"></i> Book a Service
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendToWhatsapp(e) {
+            e.preventDefault();
+            const name = document.getElementById('waName').value;
+            const email = document.getElementById('waEmail').value;
+            const service = document.getElementById('waService').value;
+            const message = document.getElementById('waMessage').value;
+
+            // Email validation check
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            const text = `*New Inquiry from Website*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Service:* ${service}%0A*Message:* ${message}`;
+            const phoneNumber = '254721752685'; 
+            
+            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+        }
+
+        function sendToWhatsappModal(e) {
+            e.preventDefault();
+            const name = document.getElementById('waNameModal').value;
+            const email = document.getElementById('waEmailModal').value;
+            const service = document.getElementById('waServiceModal').value;
+            const date = document.getElementById('waDateModal').value;
+            const message = document.getElementById('waMessageModal').value;
+
+            // Email validation check
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            const text = `*New Inquiry from Website (Popup)*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Service:* ${service}%0A*Preferred Date:* ${date}%0A*Message:* ${message}`;
+            const phoneNumber = '254721752685'; 
+            
+            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+        }
+
+        // Handle modal open to pre-select service
+        const whatsappModal = document.getElementById('whatsappModal');
+        if (whatsappModal) {
+            whatsappModal.addEventListener('show.bs.modal', event => {
+                // Button that triggered the modal
+                const button = event.relatedTarget;
+                // Extract info from data-service attribute
+                const service = button.getAttribute('data-service');
+                
+                // If service exists, update the select
+                if (service) {
+                    const modalSelect = whatsappModal.querySelector('#waServiceModal');
+                    if(modalSelect) modalSelect.value = service;
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
